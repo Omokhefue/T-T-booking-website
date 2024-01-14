@@ -1,0 +1,43 @@
+.travel-tips-container {
+  margin: .3em;
+  height: 40vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.9)),
+    url("Monsieur-de-North.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  max-width: 100%;
+  transition: all .7s ease-in;
+}
+.travel-tips-container:hover {
+  height: 50vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
+    url("Monsieur-de-North.jpg");
+  cursor: pointer;
+}
+
+.tip-card {
+  width: 70%;
+  margin: 0 auto;
+  height: 100%;
+  padding: 2em 2em 0;
+  text-align: center;
+}
+.travel-tips-container:hover .tip-card {
+  padding: 2.5em 2em;
+
+}
+.travel-tips-container:hover .tip-description {
+  font-size: 1em;
+  transition: font-size 0.3s ease-in;
+}
+
+.tip-title {
+  margin-top: 2em;
+  font-size: 1.3em;
+}
+.tip-description {
+  margin-top: 2em;
+  font-size: 0.71em;
+}
