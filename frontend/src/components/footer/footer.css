@@ -1,0 +1,117 @@
+footer {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  align-items: center;
+  padding: 0.3em 2em;
+  background-color: #f5f5f5;
+  border-top: 1px solid #e5e5e5;
+  font-size: 0.9rem;
+  color: #333;
+  bottom: 0;
+  margin-top: 2em;
+}
+footer h4 {
+  margin-bottom: 0;
+}
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.footer-section-heading {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.footer-section-list {
+  margin-top: 0;
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section-list p {
+  margin-bottom: 1em;
+}
+
+.footer-section-subscribe {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+.icon {
+  margin-right: 20px;
+}
+.footer-section-subscribe input {
+  margin-right: 0.5rem;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.footer-section-subscribe button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+footer small {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.footer-contact-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.footer-contact-details p:nth-child(1) {
+  font-size: 13px;
+  font-weight: lighter;
+}
+.footer-contact-details p:nth-child(2) {
+  color: #007bff;
+  font-weight: bolder;
+}
+.phoneIcon {
+  color: #007bff;
+}
+.footer-section:nth-child(5) {
+  grid-column: 1 / span 2;
+  align-items: center;
+}
+
+@media (min-width: 468px) {
+  footer {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 768px) {
+  footer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+    display: flex;
+    padding: 2rem;
+    background-color: #f5f5f5;
+    border-top: 1px solid #e5e5e5;
+    font-size: 0.9rem;
+    color: #333;
+    bottom: 0;
+  }
+
+  .footer-section {
+    flex: 1;
+    margin-right: 1rem;
+  }
+
+  .footer-section:last-child {
+    margin-right: 0;
+  }
+}
