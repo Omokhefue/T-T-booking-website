@@ -1,0 +1,133 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: .3em 1em;
+}
+.nbHeading {
+  flex: 1;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.nbHeading h1 {
+  margin-right: 2em;
+  flex-shrink: 0;
+}
+.nbSearch {
+  display: flex;
+  align-items: center;
+}
+.nbSearch input {
+  margin-right: 0.3em;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+}
+.nbList {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nbListItems a {
+  margin-right: 1em;
+  text-decoration: none;
+  color: black;
+}
+
+.nbListItems .active:hover {
+  background-color: rgb(1, 1, 1);
+}
+.nbIcon:hover {
+  cursor: pointer;
+}
+@media screen and (max-width: 920px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  .nbHeading {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+  .nbHeading h1 {
+    flex: 1;
+    margin-right: 0;
+  }
+  .nbHeading .nbSearch {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+  }
+  .nbList {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+
+  .nbListItems {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: inherit;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  .nbListItems a {
+    background-color: rgba(0, 0, 0, 0.23);
+    width: inherit;
+    margin: 4px;
+    text-align: center;
+    color: grey;
+    padding: 1.5em;
+  }
+  .nbList:nth-child(2) {
+    justify-content: right;
+  }
+}
+
+@media screen and (max-width: 520px) {
+    nav{
+        flex-wrap: wrap;
+    }
+  .nbHeading {
+    justify-content: left;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .nbHeading h1 {
+    flex: 0.5;
+    display: flex;
+    flex-wrap: nowrap;
+    margin-right: 0;
+    width: 100%;
+  }
+  .nbHeading .nbSearch {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+  }
+  .nbSearch input {
+    padding-left: 2em;
+  }
+}
+@media screen and (max-width: 476px) {
+  .nbHeading {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nbSearch {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 1.1em;
+  }
+    .nbSearch input {
+    padding-left:0;
+  }
+}
