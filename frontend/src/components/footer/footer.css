@@ -84,7 +84,11 @@ footer small {
   grid-column: 1 / span 2;
   align-items: center;
 }
-
+.icon{
+  background-color: rgba(148, 144, 144,0.27);
+  padding: 5px;
+  border-radius: 50%;
+}
 @media (min-width: 468px) {
   footer {
     grid-template-columns: 1fr 1fr;
