@@ -1,5 +1,5 @@
 import TravelTips from "../../components/travelTips/TravelTips";
-import HomepageTopDestination from "../../components/HomepageTopDestination/HomepageTopDestination";
+import HomepageTopDestination from "../../components/HomepageTopDestination/HomepageTopDestination.jsx";
 
 const Home = () => {
   return (
