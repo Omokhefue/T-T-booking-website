@@ -1,0 +1,60 @@
+.destinationContainer {
+  padding: 3em;
+  margin: 1em;
+}
+
+.destinationDetailsSpan::before {
+  border: 1px solid grey !important;
+}
+
+.destinationList {
+  height: 60vh;
+  width: 80vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1em;
+  justify-content: center;
+  transition: all 0.6s ease-in;
+}
+
+.destinationListItem {
+  position: relative;
+}
+.destinationListItem img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+.destinationDetails {
+  transition: all 0.6s ease-in;
+  position: absolute;
+  top: 1em;
+  left: 1em;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+.destinationDetails h5,
+.destinationDetails p {
+  margin: 0;
+  color: white;
+}
+.destinationDetails p {
+  font-size: 11px;
+  margin-bottom: 0.7em;
+  color: rgb(224, 206, 206);
+}
+@media (max-width: 768px) {
+  .destinationList {
+    height: 80vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+}
