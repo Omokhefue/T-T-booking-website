@@ -1,4 +1,4 @@
-import "./choose.css";
+import "./whyChooseUs.css";
 
 import {
   faBalanceScale,
