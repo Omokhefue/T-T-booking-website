@@ -1,0 +1,39 @@
+.propertyTypeList {
+  display: grid;
+  width: 80vw;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr;
+  /* what if i have mutiple items and want them to each have 1fr */
+  align-items: center;
+  justify-content: center;
+}
+.propertyTypeListItem img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+.propertyTypeListItem h6,
+.propertyTypeListItem p {
+  margin: 0.2em 0 0.2em 0;
+}
+.propertyTypeListItem h6 {
+  font-weight: bolder;
+  font-size: 0.85em;
+}
+.propertyTypeListItem p {
+  font-weight: bolder;
+  font-size: 0.7em;
+  color: grey;
+}
+@media (max-width: 900px) {
+  .propertyTypeListItem img {
+    height: 150px;
+  }
+}
+@media (max-width: 486px) {
+  .propertyTypeList {
+    width: 73%;
+    grid-template-columns: 1fr;
+  }
+}
