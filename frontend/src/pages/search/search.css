@@ -9,7 +9,7 @@
 }
 @media (max-width: 1440px) {
   .search {
-    padding: 2em 0;
+    padding: 2em 1em;
     width: 90%;
   }
 }
