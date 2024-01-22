@@ -1,11 +1,18 @@
-import { faStar, faStarHalf } from "@fortawesome/free-solid-svg-icons";
+import {
+  faStar,
+  faStarHalf,
+  faSearch,
+} from "@fortawesome/free-solid-svg-icons";
 import "./searchResult.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+
 const SearchResult = () => {
+  const navigate = useNavigate();
+
   return (
     <section className="searchResultContainer">
-      <div className="result">
+      <div className="result" onClick={() => navigate("/room")}>
         <div className="resultImg">
           <img src="Monsieur-de-North.jpg" alt="Charming Parisian Loft" />
         </div>
