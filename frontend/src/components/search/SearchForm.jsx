@@ -1,9 +1,27 @@
 import "./searchForm.css";
+import { SearchPageContext } from "../../context/SearchPageContext.jsx";
+import { useContext } from "react";
+import useWindowDimensions from "../../hooks/useWindowDimension.jsx";
 
 const SearchForm = () => {
+  const { state, dispatch } = useContext(SearchPageContext);
+
+  const { width } = useWindowDimensions();
+  if (width > 576) {
+    const closeIcon = document.querySelector(".search-form > .close-icon");
+    if (closeIcon) {
+      closeIcon.style.display = "none";
+    }
+  }
+  const handleClick = () => {
+    dispatch({ type: "FORM_CLOSE" });
+  };
   return (
     <section className="search-form">
       <h3 className="search-form-header">Search</h3>
+      <button className="close-icon" onClick={handleClick}>
+        x
+      </button>
       <form action="" className="search-form-content">
         <div className="form-group form-search-destination">
           <label for="destination">Destination</label>
@@ -41,7 +59,9 @@ const SearchForm = () => {
               <input type="text" placeholder="0" />
             </div>
           </div>
-          <button type="submit">Search</button>
+          <button type="submit" className="search-btn">
+            Search
+          </button>
         </div>
       </form>
     </section>
