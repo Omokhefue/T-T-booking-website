@@ -1,0 +1,266 @@
+.room {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: "Arial", sans-serif;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 5em;
+  position: relative;
+}
+
+.room-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.room-title {
+  margin: 0;
+  font-size: 24px;
+}
+
+.room-links {
+  display: flex;
+}
+
+.room-link {
+  margin-right: 15px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.room-content {
+  display: flex;
+}
+
+.room-details {
+  flex: 2;
+  margin-right: 20px;
+}
+
+.room-images {
+  flex: 1;
+  height: 200px;
+  border-radius: 8px;
+  position: relative;
+}
+.room-images img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.room-images .button {
+  position: absolute;
+  top: 10px;
+  right: 7px;
+  border-radius: 50%;
+  background-color: #333;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 25px;
+  width: 25px;
+}
+
+.room-info {
+  flex: 2;
+  padding: 0 20px;
+}
+
+.room-price {
+  margin-bottom: 10px;
+}
+
+.room-price big {
+  font-size: 28px;
+}
+
+.room-price small {
+  font-size: 14px;
+  margin-left: 5px;
+}
+
+.room-ratings {
+  color: #ffd700;
+  margin-top: 10px;
+}
+
+.room-description {
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+.room-features {
+  margin-top: 20px;
+}
+
+.room-features p {
+  font-weight: bold;
+}
+
+.room-features ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.room-features li {
+  margin-bottom: 5px;
+}
+
+.room-children {
+  margin-top: 20px;
+}
+
+.room-book-btn {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+.room-book-btn:hover {
+  background-color: #45a049;
+}
+
+.room-search {
+  flex: 1;
+}
+
+.room-form-group {
+  margin-bottom: 15px;
+}
+
+.room-form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.room-form-group input,
+.room-form-group select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.room-search-btn {
+  padding: 10px 20px;
+  background-color: #2196f3;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+.room-search-btn:hover {
+  background-color: #0b7dda;
+}
+
+.room-contact {
+  margin-top: 20px;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 30;
+  margin: 0 auto;
+  padding: 20px;
+}
+.modal .y {
+  width: 70%;
+  height: 76%;
+  background-color: rgb(64, 71, 80);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-rows: auto-fit 1fr;
+  gap:0 10px;
+  z-index: 30;
+  padding: 10px;
+  border: 1px solid rgb(43, 54, 64);
+  box-shadow: 1px 2px 7px rgb(76, 84, 96);
+}
+.modal p {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.modal img {
+  width: 100%;
+  height: 200px;
+  border-radius: 8px;
+  margin: 10px;
+  object-fit: cover;
+}
+
+.inner-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 40;
+  opacity: 1;
+}
+
+.inner-modal-nav,
+.room .close-modal {
+  background-color: rgba(98, 94, 94, 0.9);
+  padding: 7px 13px;
+  border-radius: 50%;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  transform: translateY(-50%);
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 4;
+}
+.room .close-modal {
+  right: 10px;
+  top: 5px;
+}
+.inner-modal .left {
+  left: 10px;
+  top: 50%;
+}
+
+.inner-modal .right {
+  right: 10px;
+  top: 50%;
+}
+.inner-modal img {
+  width: 70%;
+  max-height: 80vh;
+  border-radius: 8px;
+  object-fit: cover;
+}
