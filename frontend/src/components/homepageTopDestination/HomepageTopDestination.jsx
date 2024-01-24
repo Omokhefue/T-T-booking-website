@@ -1,4 +1,5 @@
 import "./homepageTopDestination.css";
+import {Link} from 'react-router-dom'
 
 const HomepageTopDestination = () => {
   return (
@@ -11,6 +12,7 @@ const HomepageTopDestination = () => {
           <img src="Monsieur-de-North.jpg" alt="" />
           <div className="destinationDetails">
             <h5>France</h5>
+            <Link to='search'>Search</Link>
             <span className="section-span destinationDetailsSpan"></span>
             <p>20 hotels</p>
             <p>42 apartments</p>

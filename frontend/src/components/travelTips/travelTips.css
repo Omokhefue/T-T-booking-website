@@ -20,7 +20,14 @@
     url("Monsieur-de-North.jpg");
   cursor: pointer;
 }
-
+@media (hover: none) {
+.travel-tips-container {
+  height: 50vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
+    url("Monsieur-de-North.jpg");
+  cursor: pointer;
+}
+}
 .tip-card {
   width: 70%;
   margin: 0 auto;

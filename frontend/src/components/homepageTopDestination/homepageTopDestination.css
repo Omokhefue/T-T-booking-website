@@ -1,6 +1,6 @@
 .destinationContainer {
   padding: 3em;
-  margin: 1em;
+  margin: 1em 1em;
 }
 
 .destinationDetailsSpan::before {

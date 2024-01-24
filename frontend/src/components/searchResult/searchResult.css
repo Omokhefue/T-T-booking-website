@@ -172,5 +172,6 @@
     grid-template-columns: 1fr;
   }
 }
-@media (max-width: 536px) {
+@media (max-width: 576px) {
+
 }

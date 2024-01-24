@@ -11,7 +11,7 @@ import useWindowDimensions from "../../hooks/useWindowDimension";
 import { useState, useEffect } from "react";
 
 const Navbar = () => {
-  const {  width } = useWindowDimensions();
+  const { width } = useWindowDimensions();
 
   const [display, setDisplay] = useState(false);
 

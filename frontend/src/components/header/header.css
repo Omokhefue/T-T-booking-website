@@ -1,0 +1,95 @@
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50vh;
+  margin-top: 5em;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
+    url("Monsieur-de-North.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  max-width: 100%;
+}
+header > p {
+  font-size: 12px;
+}
+header > h2 {
+  margin: 2em 0 0 0;
+  font-size: 2.3em;
+  text-align: center;
+}
+.headerItems {
+  width: 100%;
+  margin-top: 2em;
+}
+.searchPropertyTypes {
+  width: 60%;
+  display: flex;
+  gap: 10px;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto 2em;
+  max-width: 100%;
+}
+.searchPropertyTypeItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.header-form {
+  border-radius: 2px;
+  box-shadow: 0 15px 16px rgba(223, 212, 212, 0.4);
+  width: 78%;
+  margin: auto;
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 3px;
+  color: black;
+  height: 7vh;
+  background-color: #fff;
+}
+
+/* .option {
+  box-shadow: 0 1.5px 3px rgba(150, 130, 130, 0.7);
+  display: flex;
+  gap: 10px;
+}
+.option input,
+.option span {
+  border: 0;
+  margin-bottom: 0.5em;
+} */
+@media (max-width: 786px) {
+  form {
+    width: 100%;
+  }
+}
+@media (max-width: 639px) {
+  header {
+    height: 40vh;
+  }
+}
+@media (max-width: 571px) {
+  header {
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 480px) {
+  header {
+    margin-top: 6em;
+  }
+}

@@ -62,7 +62,7 @@ footer h4 {
 footer small {
   position: absolute;
   bottom: 0;
-  right: 0;
+  right: 20px;
 }
 .footer-contact-info {
   display: flex;
@@ -89,6 +89,8 @@ footer small {
   padding: 5px;
   border-radius: 50%;
 }
+
+
 @media (min-width: 468px) {
   footer {
     grid-template-columns: 1fr 1fr;
