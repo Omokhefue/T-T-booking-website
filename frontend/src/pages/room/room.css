@@ -1,15 +1,21 @@
 .room {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
-  padding: 20px;
+  padding: 20px 4em 20px 7em;
   font-family: "Arial", sans-serif;
-  background-color: #f8f8f8;
+  background-color: rgb(191, 39, 39);
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin-top: 5em;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-
+.room .inner{
+  /* background-color: #fff; */
+}
 .room-header {
   display: flex;
   justify-content: space-between;
@@ -39,7 +45,7 @@
 
 .room-details {
   flex: 2;
-  margin-right: 20px;
+  padding: 20px;
 }
 
 .room-images {
@@ -47,6 +53,7 @@
   height: 200px;
   border-radius: 8px;
   position: relative;
+  background-color: green;
 }
 .room-images img {
   height: 100%;
@@ -54,14 +61,17 @@
   object-fit: cover;
   border-radius: 8px;
   margin-bottom: 10px;
+  cursor: pointer;
 }
-
+.room-images span {
+  cursor: pointer;
+}
 .room-images .button {
   position: absolute;
   top: 10px;
   right: 7px;
   border-radius: 50%;
-  background-color: #333;
+  background-color: brown;
   color: white;
   display: flex;
   align-items: center;
@@ -73,6 +83,7 @@
 .room-info {
   flex: 2;
   padding: 0 20px;
+  position: relative;
 }
 
 .room-price {
@@ -90,12 +101,16 @@
 
 .room-ratings {
   color: #ffd700;
-  margin-top: 10px;
+  margin-top: 5px;
+  position: absolute;
+  top: 0px;
+  right: 20px;
 }
 
 .room-description {
   line-height: 1.6;
   font-size: 14px;
+  color: white;
 }
 
 .room-features {
@@ -110,6 +125,10 @@
   list-style-type: none;
   padding: 0;
   margin: 10px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  color: white;
 }
 
 .room-features li {
@@ -122,7 +141,7 @@
 
 .room-book-btn {
   padding: 10px 20px;
-  background-color: #4caf50;
+  background-color: brown;
   color: #fff;
   border: none;
   cursor: pointer;
@@ -131,11 +150,11 @@
 }
 
 .room-book-btn:hover {
-  background-color: #45a049;
+  background-color: #bb390a;
 }
 
 .room-search {
-  flex: 1;
+  flex: 0.7;
 }
 
 .room-form-group {
@@ -159,7 +178,7 @@
 
 .room-search-btn {
   padding: 10px 20px;
-  background-color: #2196f3;
+  background-color: brown;
   color: #fff;
   border: none;
   cursor: pointer;
@@ -168,11 +187,15 @@
 }
 
 .room-search-btn:hover {
-  background-color: #0b7dda;
+  background-color: #bb390a;
 }
 
 .room-contact {
   margin-top: 20px;
+  background-color: brown;
+  padding: 20px;
+  color: white;
+  text-align: center;
 }
 
 .modal {
@@ -192,12 +215,12 @@
 }
 .modal .y {
   width: 70%;
-  height: 76%;
+  height: 74%;
   background-color: rgb(64, 71, 80);
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto-fit 1fr;
-  gap:0 10px;
+  gap: 10px;
   z-index: 30;
   padding: 10px;
   border: 1px solid rgb(43, 54, 64);
@@ -214,7 +237,7 @@
   width: 100%;
   height: 200px;
   border-radius: 8px;
-  margin: 10px;
+  margin: 0;
   object-fit: cover;
 }
 
@@ -263,4 +286,32 @@
   max-height: 80vh;
   border-radius: 8px;
   object-fit: cover;
+}
+
+@media screen and (max-width: 1100px) {
+  .modal .y {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 868px) {
+  .modal .y {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .modal .y {
+    width: 95%;
+  }
+}
+@media screen and (max-width: 568px) {
+  .room {
+    padding: 20px;
+  }
+  .room-description {
+    line-height: 1.4;
+    font-size: 12px;
+  }
+  .room-children {
+    font-size: 9px;
+  }
 }
