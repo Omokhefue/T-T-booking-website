@@ -1,0 +1,69 @@
+.section-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: max-content;
+  margin: 0 auto;
+}
+
+.section-form .imageContainer {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.section-form .imageContainer img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+.section-form .form-container {
+  flex-basis: 0;
+  position: relative;
+  width: 100%;
+  margin: -4em auto 0;
+  background-color: white;
+  border-radius: 30px;
+}
+.section-form .form-container h2 {
+  position: absolute;
+  top: -60px;
+  color: white;
+  left: 16px;
+}
+.section-form form {
+  padding: 3em 1.5em;
+}
+.section-form .form-group {
+  position: relative;
+}
+.section-form input {
+  width: 100%;
+  height: 60px;
+  padding: 15px;
+  border: 1px solid rgb(84, 84, 194);
+}
+.section-form input::placeholder {
+  color: rgb(148, 148, 188);
+}
+
+.section-form label {
+  position: absolute;
+  top: -13px;
+  left: 30px;
+  padding: 5px;
+  cursor: text;
+  display: inline;
+  color: blue;
+  background-color: white;
+}
+.section-form button {
+  background-color: blue;
+  padding: 7px 13px;
+  border-radius: 7px;
+  width: 100%;
+  height: 50px;
+  color: white;
+  border: none;
+}
