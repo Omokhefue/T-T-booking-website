@@ -1,0 +1,17 @@
+.signup-extras {
+  display: flex;
+
+  align-items: center;
+  gap: 5px;
+  flex-direction: column;
+}
+
+.signup-extras .login {
+  display: flex;
+
+  align-items: center;
+  gap: 5px;
+}
+.signup-extras .TandC {
+  text-align: center;
+}
