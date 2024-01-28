@@ -18,13 +18,20 @@
   height: 400px;
   object-fit: cover;
 }
-.section-form .form-container {
+.section-form .details {
   flex-basis: 0;
   position: relative;
   width: 100%;
   margin: -4em auto 0;
   background-color: white;
   border-radius: 30px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.section-form .form-container {
+  position: relative;
+  width: 100%;
 }
 .section-form .form-container h2 {
   position: absolute;
@@ -66,4 +73,61 @@
   height: 50px;
   color: white;
   border: none;
+}
+@media screen and (min-width: 538px) {
+  .section-form {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  .section-form .imageContainer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+  }
+  .section-form .imageContainer img {
+    height: 100vh;
+    width: 100%;
+  }
+  .section-form .details {
+    flex: 0;
+    position: relative;
+    width: 60%;
+    height: 100%;
+    background-color: rgba(46, 44, 44, 0.7);
+  }
+  .section-form .form-container h2 {
+    position: static;
+    color: white;
+  }
+  .section-form label {
+    color: white;
+    background-color: rgba(46, 44, 44, 0.7);
+  }
+  .section-form input {
+    background-color: rgba(46, 44, 44, 0.7);
+  }
+}
+@media screen and (min-width: 1024px) {
+  .section-form .details {
+    animation: fade-in 0.5s ease-in-out;
+  }
+  .section-form .details {
+    flex: 0;
+    position: relative;
+    width: 60%;
+    height: 100%;
+    background-color: rgba(46, 44, 44, 0.7);
+  }
+  
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
 }
