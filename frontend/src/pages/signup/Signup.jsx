@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import Form from "../../components/form/Form";
 import "./signup.css";
+
+
 const Signup = () => {
   const fields = [
     {
